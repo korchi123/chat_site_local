@@ -39,7 +39,7 @@ const App=observer( ()=>{
 
   return (
     
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <NavBar />
       <AppRouter />
        

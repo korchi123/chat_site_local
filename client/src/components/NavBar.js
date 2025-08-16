@@ -45,7 +45,7 @@ const NavBar = observer(() => {
         <>
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container fluid>
-                    <Navbar.Brand href={Posts_Route}>Pet project</Navbar.Brand>
+                    <Navbar.Brand onClick={() => navigate(Posts_Route)}>Pet project</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
@@ -75,8 +75,8 @@ const NavBar = observer(() => {
                                 </>
                             ) : (
                                 <>
-                                    <Nav.Link href={Registration_Route}>Зарегистрироваться</Nav.Link>
-                                    <Nav.Link href={Login_Route}>Войти</Nav.Link>
+                                    <Nav.Link onClick={() => navigate(Registration_Route)}>Зарегистрироваться</Nav.Link>
+                                    <Nav.Link onClick={() => navigate(Login_Route)}>Войти</Nav.Link>
                                 </>
                             )}
                         </Nav>
